@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <title>Parchment, Stone, or Blade</title>
 
-	<meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-	<title>Parchment, Stone, or Blade</title>
+  <body>
+    <h1>Rock, Paper, or Scissors?</h1>
 
-	<link rel="stylesheet" href="css/main.css">
+    <p>
+      A bot has challenged you to a game. <strong>Rock </strong> beats
+       <strong> scissors</strong>, <strong> scissors</strong> beats
+       <strong> paper</strong>, and <strong> paper</strong> beats
+      <strong>rock</strong>.
+    </p>
 
-</head>
+    <div class="scoreboard">
+      <h2>Scoreboard</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td id="humanScore">0</td>
+            <td id="computerScore">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>You</th>
+            <th>Bot</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <section class="update">
+    
+    <div id="status"></div>
+  </section>
+    <section class="options">
+    <button id="rock"></button>
 
-<body>
+    <button id="paper"></button>
 
-<h1>Rock, Paper, or Scissors?</h1>
+    <button id="scissors"></button>
+    </section>
 
-<p>A bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.</p>
-
-<div class="scoreboard">
-  <h2>Scoreboard</h2>
-  <table>
-    <tbody>
-      <tr>
-        <td id="humanScore">0</td>
-        <td id="computerScore">0</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th>You</th>
-        <th>Bot</th>
-      </tr>
-    </tfoot>
-  </table>
-</div>
-
-<h2>Choose Wisely</h2>
-
-<button id="rock">Rock</button>
-
-<button id="paper">Paper</button>
-
-<button id="scissors">Scissors</button>
-
-
-<div id="status"></div>
-<script src="./js/main.js"></script>
-
-</body>
-
+    
+    <script src="./js/main.js"></script>
+  </body>
 </html>
